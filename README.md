@@ -26,7 +26,8 @@ Create **PTGT API** credentials with your API key and (optionally) a custom base
 
 ## Issues
 
-When this repo is public, GitHub Issues will be the place to report bugs and feature requests.
+Report bugs and feature requests at:
+https://github.com/ChrisPTGT/n8n-nodes-ptgt/issues
 
 ## Development
 
