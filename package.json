@@ -18,6 +18,9 @@
 	"bugs": {
 		"url": "https://github.com/ChrisPTGT/n8n-nodes-ptgt/issues"
 	},
+	"publishConfig": {
+		"access": "public"
+	},
 	"scripts": {
 		"build": "n8n-node build",
 		"build:watch": "tsc --watch",
