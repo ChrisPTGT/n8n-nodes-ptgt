@@ -1,5 +1,5 @@
 {
-	"name": "@postthatgetthis/n8n-nodes-ptgt",
+	"name": "@ptgt/n8n-nodes-ptgt",
 	"version": "0.1.1",
 	"description": "PostThat -> GetThis (PTGT) community node for n8n.",
 	"license": "MIT",
