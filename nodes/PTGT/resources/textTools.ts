@@ -21,7 +21,7 @@ export const textToolsDescription: INodeProperties[] = [
 			{
 				name: 'Format for Slack',
 				value: 'toSlack',
-				action: 'Format text for Slack',
+				action: 'Format text for slack',
 				description: 'Convert markdown-like text to Slack formatting',
 			},
 			{
@@ -54,7 +54,7 @@ export const textToolsDescription: INodeProperties[] = [
 		name: 'text',
 		type: 'string',
 		default: '',
-		description: 'Plain text payload.',
+		description: 'Plain text payload',
 		displayOptions: {
 			show: {
 				...showTextTools,
@@ -71,7 +71,7 @@ export const textToolsDescription: INodeProperties[] = [
 		name: 'binaryProperty',
 		type: 'string',
 		default: 'data',
-		description: 'Binary property name to read text from.',
+		description: 'Binary property name to read text from',
 		displayOptions: {
 			show: {
 				...showTextTools,
@@ -89,7 +89,7 @@ export const textToolsDescription: INodeProperties[] = [
 			{ name: 'Text', value: 'text' },
 		],
 		default: 'json',
-		description: 'Choose JSON or text/plain response.',
+		description: 'Choose JSON or text/plain response',
 		displayOptions: {
 			show: {
 				...showTextTools,

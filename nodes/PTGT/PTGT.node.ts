@@ -30,7 +30,8 @@ export class PTGT implements INodeType {
 		version: 1,
 		description:
 			'PostThatGetThis is a simple utility API for n8n workflows. Fix malformed JSON, convert formats, extract fields, and clean messy AI or app outputs with a single HTTP request.',
-		subtitle: '={{$parameter["resource"] + ": " + $parameter["operation"]}}',
+		subtitle:
+			'PostThatGetThis is a simple utility API for n8n workflows. Fix malformed JSON, convert formats, extract fields, and clean messy AI or app outputs with a single HTTP request.',
 		defaults: {
 			name: 'PTGT',
 		},
@@ -51,17 +52,17 @@ export class PTGT implements INodeType {
 				noDataExpression: true,
 				options: [
 					{ name: 'Base64', value: 'base64' },
-					{ name: 'CSV Tools', value: 'csvTools' },
-					{ name: 'Hex Tools', value: 'hexTools' },
-					{ name: 'HTML Tools', value: 'htmlTools' },
-					{ name: 'JSON Tools', value: 'jsonTools' },
+					{ name: 'CSV Tool', value: 'csvTools' },
+					{ name: 'Hex Tool', value: 'hexTools' },
+					{ name: 'HTML Tool', value: 'htmlTools' },
+					{ name: 'JSON Tool', value: 'jsonTools' },
 					{ name: 'KV', value: 'kv' },
-					{ name: 'OCR Tools', value: 'ocrTools' },
-					{ name: 'PDF Tools', value: 'pdfTools' },
-					{ name: 'Percent Tools', value: 'percentTools' },
-					{ name: 'Text Tools', value: 'textTools' },
-					{ name: 'URL Tools', value: 'urlTools' },
-					{ name: 'Utilities', value: 'utilities' },
+					{ name: 'OCR Tool', value: 'ocrTools' },
+					{ name: 'PDF Tool', value: 'pdfTools' },
+					{ name: 'Percent Tool', value: 'percentTools' },
+					{ name: 'Text Tool', value: 'textTools' },
+					{ name: 'URL Tool', value: 'urlTools' },
+					{ name: 'Utility', value: 'utilities' },
 				],
 				default: 'jsonTools',
 			},
@@ -102,7 +103,7 @@ export class PTGT implements INodeType {
 				if (responseFormat === 'json' && typeof response === 'string') {
 					try {
 						output = JSON.parse(response) as unknown;
-					} catch (error) {
+					} catch {
 						throw new NodeOperationError(
 							this.getNode(),
 							'The API returned text when JSON was expected.',

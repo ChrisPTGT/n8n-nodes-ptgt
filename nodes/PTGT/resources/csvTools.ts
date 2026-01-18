@@ -42,7 +42,7 @@ export const csvToolsDescription: INodeProperties[] = [
 		name: 'text',
 		type: 'string',
 		default: '',
-		description: 'CSV text payload.',
+		description: 'CSV text payload',
 		displayOptions: {
 			show: {
 				...showCsvTools,
@@ -59,7 +59,7 @@ export const csvToolsDescription: INodeProperties[] = [
 		name: 'binaryProperty',
 		type: 'string',
 		default: 'data',
-		description: 'Binary property name to read text from.',
+		description: 'Binary property name to read text from',
 		displayOptions: {
 			show: {
 				...showCsvTools,
@@ -77,7 +77,7 @@ export const csvToolsDescription: INodeProperties[] = [
 			{ name: 'Text', value: 'text' },
 		],
 		default: 'json',
-		description: 'Choose JSON or text/plain response.',
+		description: 'Choose JSON or text/plain response',
 		displayOptions: {
 			show: {
 				...showCsvTools,

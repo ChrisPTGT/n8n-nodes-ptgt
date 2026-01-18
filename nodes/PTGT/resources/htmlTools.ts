@@ -15,13 +15,13 @@ export const htmlToolsDescription: INodeProperties[] = [
 			{
 				name: 'Encode HTML',
 				value: 'encode',
-				action: 'HTML-escape a string',
+				action: 'Html escape a string',
 				description: 'HTML-escape a string',
 			},
 			{
 				name: 'Decode HTML',
 				value: 'decode',
-				action: 'HTML-unescape a string',
+				action: 'Html unescape a string',
 				description: 'HTML-unescape a string',
 			},
 			{

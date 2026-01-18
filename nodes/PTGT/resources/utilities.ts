@@ -33,7 +33,7 @@ export const utilitiesDescription: INodeProperties[] = [
 		type: 'string',
 		default: '',
 		required: true,
-		description: 'Value to hash.',
+		description: 'Value to hash',
 		displayOptions: {
 			show: {
 				...showUtilities,

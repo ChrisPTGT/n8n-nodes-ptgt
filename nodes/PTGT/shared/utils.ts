@@ -81,7 +81,7 @@ export function parseJsonValue(
 
 	try {
 		return JSON.parse(value) as IDataObject | IDataObject[] | string | number | boolean | null;
-	} catch (error) {
+	} catch {
 		throw new NodeOperationError(this.getNode(), `Parameter "${name}" must be valid JSON.`, {
 			itemIndex,
 		});

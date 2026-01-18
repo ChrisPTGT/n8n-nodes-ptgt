@@ -49,7 +49,7 @@ export const ocrToolsDescription: INodeProperties[] = [
 		type: 'string',
 		default: '',
 		required: true,
-		description: 'Public URL to the image.',
+		description: 'Public URL to the image',
 		displayOptions: {
 			show: {
 				...showOcrTools,
@@ -81,7 +81,7 @@ export const ocrToolsDescription: INodeProperties[] = [
 		type: 'string',
 		default: '',
 		required: true,
-		description: 'Base64 string or data URI.',
+		description: 'Base64 string or data URI',
 		displayOptions: {
 			show: {
 				...showOcrTools,
@@ -96,7 +96,7 @@ export const ocrToolsDescription: INodeProperties[] = [
 		name: 'binaryProperty',
 		type: 'string',
 		default: 'data',
-		description: 'Binary property name to read from.',
+		description: 'Binary property name to read from',
 		displayOptions: {
 			show: {
 				...showOcrTools,
@@ -111,7 +111,7 @@ export const ocrToolsDescription: INodeProperties[] = [
 		name: 'filename',
 		type: 'string',
 		default: '',
-		description: 'Optional filename to associate with the base64 payload.',
+		description: 'Optional filename to associate with the base64 payload',
 		displayOptions: {
 			show: {
 				...showOcrTools,

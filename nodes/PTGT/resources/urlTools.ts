@@ -15,19 +15,19 @@ export const urlToolsDescription: INodeProperties[] = [
 			{
 				name: 'Encode URL',
 				value: 'encode',
-				action: 'URL-encode a string',
+				action: 'Url encode a string',
 				description: 'URL-encode a string',
 			},
 			{
 				name: 'Decode URL',
 				value: 'decode',
-				action: 'URL-decode a string',
+				action: 'Url decode a string',
 				description: 'URL-decode a string',
 			},
 			{
 				name: 'Normalize URL',
 				value: 'normalize',
-				action: 'Normalize a URL-encoded string',
+				action: 'Normalize a url encoded string',
 				description: 'Decode then encode a string',
 			},
 		],

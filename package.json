@@ -1,5 +1,5 @@
 {
-	"name": "n8n-nodes-ptgt",
+	"name": "@ptgt/n8n-nodes-ptgt",
 	"version": "0.1.1",
 	"description": "PostThat -> GetThis (PTGT) community node for n8n.",
 	"license": "MIT",
@@ -8,8 +8,8 @@
 		"n8n-community-node-package"
 	],
 	"author": {
-		"name": "",
-		"email": ""
+		"name": "PostThatGetThis",
+		"email": "support@postthatgetthis.com"
 	},
 	"repository": {
 		"type": "git",
@@ -37,7 +37,7 @@
 			"dist/credentials/PTGTApi.credentials.js"
 		],
 		"nodes": [
-			"dist/nodes/PTGT/PTGT.node.js"
+			"dist/nodes/PTGT/Ptgt.node.js"
 		]
 	},
 	"devDependencies": {

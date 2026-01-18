@@ -18,7 +18,7 @@ const textInputFields: INodeProperties[] = [
 		name: 'text',
 		type: 'string',
 		default: '',
-		description: 'Plain text payload.',
+		description: 'Plain text payload',
 		displayOptions: {
 			show: {
 				inputMode: ['text'],
@@ -33,7 +33,7 @@ const textInputFields: INodeProperties[] = [
 		name: 'binaryProperty',
 		type: 'string',
 		default: 'data',
-		description: 'Binary property name to read text from.',
+		description: 'Binary property name to read text from',
 		displayOptions: {
 			show: {
 				inputMode: ['binary'],
@@ -53,16 +53,16 @@ export const jsonToolsDescription: INodeProperties[] = [
 		},
 		options: [
 			{
+				name: 'Extract Key/Value Pairs',
+				value: 'extract',
+				action: 'Extract key value pairs from text',
+				description: 'Parse text lines like "key: value" into JSON',
+			},
+			{
 				name: 'Fix JSON',
 				value: 'fix',
 				action: 'Fix malformed JSON',
 				description: 'Repair malformed JSON string',
-			},
-			{
-				name: 'Extract Key/Value Pairs',
-				value: 'extract',
-				action: 'Extract key/value pairs from text',
-				description: 'Parse text lines like "key: value" into JSON',
 			},
 			{
 				name: 'Flatten JSON',
@@ -129,7 +129,7 @@ export const jsonToolsDescription: INodeProperties[] = [
 			{ name: 'Text', value: 'text' },
 		],
 		default: 'json',
-		description: 'Choose JSON or text/plain response.',
+		description: 'Choose JSON or text/plain response',
 		displayOptions: {
 			show: {
 				...showJsonTools,
@@ -143,7 +143,7 @@ export const jsonToolsDescription: INodeProperties[] = [
 		type: 'json',
 		default: '',
 		required: true,
-		description: 'JSON object or array.',
+		description: 'JSON object or array',
 		displayOptions: {
 			show: {
 				...showJsonTools,
@@ -172,7 +172,7 @@ export const jsonToolsDescription: INodeProperties[] = [
 		name: 'options',
 		type: 'json',
 		default: '',
-		description: 'Optional formatting options.',
+		description: 'Optional formatting options',
 		displayOptions: {
 			show: {
 				...showJsonTools,

@@ -15,13 +15,13 @@ export const hexToolsDescription: INodeProperties[] = [
 			{
 				name: 'Encode Hex',
 				value: 'encode',
-				action: 'Hex-encode a string',
+				action: 'Hex encode a string',
 				description: 'Hex-encode a string',
 			},
 			{
 				name: 'Decode Hex',
 				value: 'decode',
-				action: 'Hex-decode a string',
+				action: 'Hex decode a string',
 				description: 'Hex-decode a string',
 			},
 			{

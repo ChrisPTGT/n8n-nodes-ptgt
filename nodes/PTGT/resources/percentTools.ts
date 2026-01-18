@@ -15,13 +15,13 @@ export const percentToolsDescription: INodeProperties[] = [
 			{
 				name: 'Encode Percent',
 				value: 'encode',
-				action: 'Percent-encode a string',
+				action: 'Percent encode a string',
 				description: 'Percent-encode a string',
 			},
 			{
 				name: 'Decode Percent',
 				value: 'decode',
-				action: 'Percent-decode a string',
+				action: 'Percent decode a string',
 				description: 'Percent-decode a string',
 			},
 			{

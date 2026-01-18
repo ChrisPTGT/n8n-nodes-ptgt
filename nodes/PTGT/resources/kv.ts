@@ -15,7 +15,7 @@ export const kvDescription: INodeProperties[] = [
 			{
 				name: 'Set Value',
 				value: 'set',
-				action: 'Set a key/value',
+				action: 'Set a key value',
 				description: 'Store a value with optional TTL',
 			},
 			{
@@ -51,7 +51,7 @@ export const kvDescription: INodeProperties[] = [
 		name: 'value',
 		type: 'json',
 		default: '',
-		description: 'Value to store.',
+		description: 'Value to store',
 		displayOptions: {
 			show: {
 				...showKv,
@@ -64,7 +64,7 @@ export const kvDescription: INodeProperties[] = [
 		name: 'ttlSeconds',
 		type: 'number',
 		default: 300,
-		description: 'Time to live in seconds.',
+		description: 'Time to live in seconds',
 		displayOptions: {
 			show: {
 				...showKv,

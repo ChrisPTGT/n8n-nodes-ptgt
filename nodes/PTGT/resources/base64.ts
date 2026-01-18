@@ -39,7 +39,7 @@ export const base64Description: INodeProperties[] = [
 		type: 'string',
 		default: '',
 		required: true,
-		description: 'Base64 string or data URI.',
+		description: 'Base64 string or data URI',
 		displayOptions: {
 			show: {
 				...showBase64,
@@ -52,7 +52,7 @@ export const base64Description: INodeProperties[] = [
 		name: 'filename',
 		type: 'string',
 		default: '',
-		description: 'Optional filename for the uploaded file.',
+		description: 'Optional filename for the uploaded file',
 		displayOptions: {
 			show: {
 				...showBase64,
@@ -65,7 +65,7 @@ export const base64Description: INodeProperties[] = [
 		name: 'contentType',
 		type: 'string',
 		default: '',
-		description: 'Optional MIME type override.',
+		description: 'Optional MIME type override',
 		displayOptions: {
 			show: {
 				...showBase64,
