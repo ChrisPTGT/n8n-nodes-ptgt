@@ -1,6 +1,6 @@
 {
 	"name": "@postthatgetthis/n8n-nodes-ptgt",
-	"version": "0.1.1",
+	"version": "1.0.0",
 	"description": "PostThat -> GetThis (PTGT) community node for n8n.",
 	"license": "MIT",
 	"homepage": "https://www.postthatgetthis.com",
