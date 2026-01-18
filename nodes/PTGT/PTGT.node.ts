@@ -25,11 +25,12 @@ export class PTGT implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'PostThat -> GetThis',
 		name: 'ptgt',
-		icon: { light: 'file:../../icons/ptgt.svg', dark: 'file:../../icons/ptgt.dark.svg' },
+		icon: { light: 'file:../../icons/ptgt-logo.svg', dark: 'file:../../icons/ptgt-logo.dark.svg' },
 		group: ['input'],
 		version: 1,
+		description:
+			'PostThatGetThis is a simple utility API for n8n workflows. Fix malformed JSON, convert formats, extract fields, and clean messy AI or app outputs with a single HTTP request.',
 		subtitle: '={{$parameter["resource"] + ": " + $parameter["operation"]}}',
-		description: 'PostThat -> GetThis (PTGT) API',
 		defaults: {
 			name: 'PTGT',
 		},
@@ -112,9 +113,16 @@ export class PTGT implements INodeType {
 					output = JSON.stringify(response);
 				}
 
-				returnData.push({
-					json: responseFormat === 'text' ? { text: output } : (output as IDataObject),
-				});
+				let jsonOutput: IDataObject;
+				if (responseFormat === 'text') {
+					jsonOutput = { text: String(output) };
+				} else if (typeof output === 'object' && output !== null && !Array.isArray(output)) {
+					jsonOutput = output as IDataObject;
+				} else {
+					jsonOutput = { data: output as IDataObject };
+				}
+
+				returnData.push({ json: jsonOutput });
 			} catch (error) {
 				if (this.continueOnFail()) {
 					returnData.push({ json: this.getInputData(itemIndex)[0].json, error, pairedItem: itemIndex });

@@ -9,9 +9,9 @@ import type {
 export class PTGTApi implements ICredentialType {
 	name = 'ptgtApi';
 
-	displayName = 'PTGT API';
+	displayName = 'PostThatGetThis API';
 
-	icon: Icon = { light: 'file:../icons/ptgt.svg', dark: 'file:../icons/ptgt.dark.svg' };
+	icon: Icon = { light: 'file:../icons/ptgt-logo.svg', dark: 'file:../icons/ptgt-logo.dark.svg' };
 
 	documentationUrl = 'https://www.postthatgetthis.com';
 

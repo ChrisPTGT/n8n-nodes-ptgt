@@ -196,10 +196,10 @@ export async function buildRequest(
 
 	if (resource === 'pdfTools') {
 		if (operation === 'merge') {
-			const files = parseJsonValue.call(this, 'files', itemIndex, true) as unknown;
+			const files = parseJsonValue.call(this, 'files', itemIndex, true) as IDataObject[];
 			ensureArray(files, 'files', itemIndex, this);
 			const filename = getOptionalParameter.call(this, 'filename', itemIndex) as string | undefined;
-			const body: IDataObject = { files };
+			const body: IDataObject = { files: files as IDataObject[] };
 			if (filename) {
 				body.filename = filename;
 			}
@@ -208,7 +208,7 @@ export async function buildRequest(
 		if (operation === 'split') {
 			const url = requireStringParameter.call(this, 'url', itemIndex);
 			const mode = getOptionalParameter.call(this, 'mode', itemIndex) as string | undefined;
-			const ranges = parseJsonValue.call(this, 'ranges', itemIndex) as unknown;
+			const ranges = parseJsonValue.call(this, 'ranges', itemIndex) as string[] | undefined;
 			const baseFilename = getOptionalParameter.call(this, 'baseFilename', itemIndex) as string | undefined;
 			const body: IDataObject = { url };
 			if (mode) {
@@ -223,7 +223,7 @@ export async function buildRequest(
 			}
 			if (ranges !== undefined) {
 				ensureArray(ranges, 'ranges', itemIndex, this);
-				body.ranges = ranges;
+				body.ranges = ranges as string[];
 			}
 			if (baseFilename) {
 				body.base_filename = baseFilename;
